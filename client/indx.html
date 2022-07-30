@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable = no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div id="content"></div>
+    <button onclick="handleClick()">Get Info</button>
+</body>
+<script>
+    async function handleClick(){
+                const result = await fetch('http://localhost:8080/Homework_Adv_5_war_exploded/register',{
+                    method: 'GET'
+                });
+               let text = await  result.text();
+               console.log(text);
+
+               document.getElementById('content').innerHTML = text;
+    }
+</script>
+</html>

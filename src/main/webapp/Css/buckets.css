@@ -1,0 +1,30 @@
+.bucket-container {
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.bucket-item {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    margin: 20px;
+}
+
+.btns {
+    align-self: center;
+    margin-left: auto;
+}
+
+.content {
+    overflow : hidden;
+    margin: 0 20px;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+}
+body{
+    background: #007214;
+}
